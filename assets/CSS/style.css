@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+.container .hero-section--header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    align-items: center;
+}
+
+.container .hero-section--header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 5px;
+}
+
+.container .hero-section--header .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #555555;
+}
+
+.container .hero-section--header .navbar ul .item-link {
+    padding: 5px 10px;
+    color: inherit;
+}
+
+.container .hero-section--header .navbar ul .item-link a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.container .hero-section--header .navbar ul .item-link a:hover {
+    border-bottom-color: #555555;
+    transform-origin: center;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.header-img {
+    position: absolute;
+    background-image: url(https://image.freepik.com/free-photo/modern-company-office-room-daylight_1098-17900.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-img .logo-section {
+    margin-left: 3rem;
+    padding-top: 2rem;
+}
+
+.logo-section .logo-section__logo-text {
+    font-size: 36px;
+    color: #272727;
+    letter-spacing: -4px;
+    perspective: 100px;
+    margin: 0;
+}
+
