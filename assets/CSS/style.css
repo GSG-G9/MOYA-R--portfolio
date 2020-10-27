@@ -80,6 +80,7 @@ body {
     clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
     background-position: center;
     background-size: cover;
+    transition: all 0.35s;
 }
 
 .header-img .logo-section {
@@ -105,6 +106,7 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    transition: all 0.35s;
 }
 
 .hero-section--content__contact-btn {
@@ -119,6 +121,12 @@ body {
     color: #ffffff;
     margin-top: 3rem;
     padding-top: 10px;
+    transition: all 0.2s;
+}
+
+.hero-section--content__contact-btn:hover {
+    background-color: rgb(0, 124, 207);
+    transition: all 0.2s;
 }
 
 .hero-section--content__contact-header {
@@ -130,10 +138,65 @@ body {
     line-height: 1.5;
 }
 
-@media (max-width: 1200) {
+@media (max-width: 1200px) {
+    .container .hero-section--header {
+        padding-right: 3rem;
+    }
+}
 
+@media (max-width: 1000px) {
+    .container .hero-section--header {
+        padding-right: 1rem;
+    }
 }
 
 @media (max-width: 900px) {
+    .container .hero-section--header {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .container .hero-section--header .navbar {
+        width: 100%;
+    }
+    .container .hero-section--header .navbar ul {
+        margin: 0px;
+    }
+    .hero-section--content__contact-dec {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
 
+@media (max-width: 600px) {
+    .hero-section {
+        min-height: 400px;
+    }
+    .container {
+        padding-bottom: 2rem;
+    }
+    .container .hero-section--header {
+        display: none;
+    }
+    .header-img {
+        min-height: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-size: cover;
+        transition: all 0.35s;
+    }
+    .hero-section--content {
+        margin: 0 auto;
+        padding-top: 2rem;
+        width: 80%;
+        transition: all 0.35s;
+    }
+    .hero-section--content__contact-header {
+        font-size: 20px;
+        width: 100%;
+    }
+    .hero-section--content__contact-dec {
+        font-size: 16px;
+        line-height: 1.2;
+        width: 100%;
+    }
 }
