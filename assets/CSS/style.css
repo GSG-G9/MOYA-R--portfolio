@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 15px;
-  box-sizing: border-box;
-  height: 1060rem;
+  font-family: Poppins;
 }
 
 body {
@@ -234,7 +234,6 @@ body {
 }
 
 .our-services__title {
-  width: 319px;
   margin: 50px auto 0;
   font-family: Poppins;
   font-style: normal;
@@ -312,69 +311,37 @@ body {
 
 .service:first-child > .services-topBar {
   background: #0884ff;
+  box-shadow: inset 1px -2px 8px 0 #5555553a;
 }
 
 .service:nth-of-type(2) > .services-topBar {
   background: #ff00b8;
+  box-shadow: inset 1px -2px 8px 0 #5555553a;
 }
 
 .service:nth-of-type(3) > .services-topBar {
   background: #3bc4cd;
+  box-shadow: inset 1px -2px 8px 0 #5555553a;
 }
 
 .service:nth-of-type(4) > .services-topBar {
   background: #ffe600;
+  box-shadow: inset 1px -2px 8px 0 #5555553a;
 }
 
-.our-services__bg {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
+/* Desktops and laptops ----------- */
+@media (max-width: 1200px) {
+  html{
+    font-size: 10px;
+  }
+
+  .our-services__Services-container {
+    width: auto;
+  }
 }
 
-.our-services__bg > div {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.our-services__bg > div:first-child {
-  background: rgba(221, 205, 255, 0.2);
-  height: 6.54rem;
-  width: 6.54rem;
-  left: 55rem;
-  top: 4rem;
-}
-
-.our-services__bg > div:nth-of-type(2) {
-  background: rgba(221, 205, 255, 0.2);
-  height: 6.54rem;
-  width: 6.54rem;
-  left: 26rem;
-  top: 22rem;
-}
-
-.our-services__bg > div:nth-of-type(3) {
-  background: rgba(221, 205, 255, 0.2);
-  height: 4.07rem;
-  width: 4.07rem;
-  left: 89rem;
-  top: 23rem;
-}
-
-.our-services__bg > div:nth-of-type(4) {
-  background: rgba(221, 205, 255, 0.2);
-  height: 3.264rem;
-  width: 3.264rem;
-  left: 97rem;
-  top: 25rem;
-}
-
-.our-services__bg > div:nth-of-type(5) {
-  background: rgba(133, 81, 243, 0.2);
-  height: 6.54rem;
-  width: 6.54rem;
-  left: 85rem;
-  top: 28rem;
+/* portrait ----------- */
+@media (max-width: 1000px) {
 }
 
 .our-services__bg > div:nth-of-type(6) {
