@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+ 
+  padding:0;
+}
+.container-team{
+  width: 1000px;
+  height: 1000px;
+}
+/* Satrt our Team */
+.container-team-card{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 1000px;
+
+}
+.container-team h2 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top:20px;
+  left: 16px;
+}
+.container-team h2 span {
+  display: inline-block;
+  color: rgb(126, 125, 125);
+}
+.card {
+  width: 40%;  /*40% from*/
+  height: 200px;
+  position: relative; /* to all elment inside be absolute*/
+  -webkit-transform-style: preserve-3d; /* to save 3d proparites when doing it */
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 2s ease-in-out;
+  margin-bottom: 40px;
+
+ 
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+/* start front */
+.card > section {
+  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
+  backface-visibility: hidden;
+  background-color: #fcf1f1;
+  border-radius: 50px;
+ 
+  
+}
+#member-one {
+  background-image: url("../images/ahmed.jpg");
+}
+#member-two{
+  background-image: url("../images/yasmeen.jpg");
+}
+#member-three{
+  background-image: url("../images/osama.jpg");
+ background-size: 100% 100%;
+}
+#member-four{
+  background-image: url("../images/mohumad.jpg");
+}
+
+.front-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-top: 10px;
+}
+.front h4 {
+  position: absolute;
+  top: 0px;
+  left: 180px;
+  font-size: 1.5em;
+}
+.front h5 {
+  position: absolute;
+  top: 60px;
+  left: 180px;
+}
+
+.front p {
+  position: absolute;
+  bottom: 10px;
+  left: 145px;
+  background-color: rgba(221, 221, 221, 0.39);
+  border-radius: 10px;
+  padding: 5px;
+}
+.front p span {
+  margin: 5px;
+  color: rgb(150, 7, 31);
+  font-weight: bolder;
+}
+.front-one{
+  border-radius: 0 50px;
+}
+/* start back */
+.card section:last-of-type {
+  z-index: 1;
+border-radius: 50px;
+  backface-visibility: visible;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-wrap: wrap;
+
+  transform: rotateY(180deg); /* to make words as a front */
+}
+.back a {
+  color: #333;
+ 
+}
+.back a i {
+  font-size: 30px;
+  margin: 5px;
+}
+/* End Our Team  */
+@media  (max-width:1200px){
+  .container-team-card{
+    width: 90%;
+    flex-direction: row;
+  }
+  .container-team h2{
+    position: absolute;
+    left:420px;   
+    
+  }
+
+}
+@media (min-width:600px) and (max-width:900px){
+  .container-team-card{
+    width: 90%;
+    flex-direction: column;
+  }
+  .container-team h2{
+    position: absolute;
+    top:30;      
+  }
+
+}
+  @media (min-width:300px) and (max-width:600px){
+    .container-team-card{
+      width: 90%;
+      flex-direction: column;
+    }
+    .container-team h2{
+      position: absolute;
+      top:30;   
+      left: 0;   
+    }
+  
+  }
