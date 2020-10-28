@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="hero-section">
-        <div class="header-img">
-                
+      <div class="header-img"></div>
+      <div class="container">
+        <header class="hero-section--header">
+          <div class="logo-section">
+            <h1 class="logo-section__logo-text"><img src="./assets//img/Logo.png" alt="log-im" width="150px" height="auto" ></h1>
+          </div>
+          <div class="navbar">
+            <ul>
+              <li class="item-link">
+                <a clss="active" href="#service">Our Service</a>
+              </li>
+              <li class="item-link"><a href="#aboutus">About Us</a></li>
+              <li class="item-link"><a href="#team">Our Team</a></li>
+              <li class="item-link"><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </header>
+        <div class="hero-section--content">
+          <h2 class="hero-section--content__contact-header">
+            "Lorem ipsum, dolor sit amet consectetur."
+          </h2>
+          <p class="hero-section--content__contact-dec">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            repellendus quo quasi voluptatem cum accusantium! Necessitatibus
+            deleniti neque saepe possimus fugiat quod ab a fugit sed. Sit
+            nostrum culpa corrupti!
+          </p>
+          <a href="#contact" class="hero-section--content__contact-btn"
+            >Contact Us</a
+          >
         </div>
-        <div class="container">
-            
-            <header class="hero-section--header">
-                <div class="logo-section">
-                    <h1 class="logo-section__logo-text">MOYA TEAM</h1>
-                </div>
-                <div class="navbar">
-                    <ul>
-                        <li class="item-link"><a clss="active" href="#service">Our Service</a></li>
-                        <li class="item-link"><a href="#aboutus">About Us</a></li>
-                        <li class="item-link"><a href="#team">Our Team</a></li>
-                        <li class="item-link"><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-            </header>
-            <div class="hero-section--content">
-                <h2 class="hero-section--content__contact-header">"Lorem ipsum, dolor sit amet consectetur."</h2>
-                <p class="hero-section--content__contact-dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus quo quasi voluptatem cum accusantium! Necessitatibus deleniti neque saepe possimus fugiat quod ab a fugit sed. Sit nostrum culpa corrupti!</p>
-                <a href="#contact" class="hero-section--content__contact-btn">Contact Us</a>
+        <div class="collapse-navbar">
+          <button class="menu-btn" id="open-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="logo-section">
+            <h1 class="logo-section__logo-text"><img src="./assets//img/Logo.png" alt="log-im" width="100px" height="auto" ></h1>
+          </div>
+          <div class="collapse-navbar--container">
+            <!-- <div class="logo-section">
+              <h1 class="logo-section__logo-text">MOYA TEAM</h1>
+            </div> -->
+            <div class="logo-section">
+              <h1 class="logo-section__logo-text"><img src="./assets//img/Logo.png" alt="log-im" width="100px" height="auto" ></h1>
             </div>
-            <div class="collapse-navbar">
-                <button class="menu-btn" id="open-menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse-navbar--container">
-                    <div class="logo-section">
-                        <h1 class="logo-section__logo-text">MOYA TEAM</h1>
-                    </div>
-                    <ul>
-                        <li class="item-link"><a clss="active" href="#service">Our Service</a></li>
-                        <li class="item-link"><a href="#aboutus">About Us</a></li>
-                        <li class="item-link"><a href="#team">Our Team</a></li>
-                        <li class="item-link"><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ul>
+              <li class="item-link">
+                <a clss="active" href="#service">Our Service</a>
+              </li>
+              <li class="item-link"><a href="#aboutus">About Us</a></li>
+              <li class="item-link"><a href="#team">Our Team</a></li>
+              <li class="item-link"><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
-    <script src="https://kit.fontawesome.com/cea4c25e73.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/cea4c25e73.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
