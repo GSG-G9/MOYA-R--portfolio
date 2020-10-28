@@ -536,16 +536,10 @@ border-radius: 50px;
 
 /* End Our Team  */
 @media  (max-width:1200px){
-  .container-team-card{
-    width: 90%;
-    flex-direction: row;
+ 
+  .our-services__container {
+    margin: 117px 1px;
   }
-  .container-team h2{
-    position: absolute;
-    left:420px;   
-    
-  }
-
 }
 @media (min-width:600px) and (max-width:900px){
   .container-team-card{
@@ -572,21 +566,18 @@ border-radius: 50px;
 }
 
 
-@media (min-width: 1200px) {
-
-}
 
 @media (max-width: 1200px) {
   /* header */
-  .container .hero-section--header {
+  /* .container .hero-section--header {
     padding-right: 3rem;
-  }
+  } */
 
   /* */
-  .our-services__Services-container {
+  /* .our-services__Services-container {
     flex-flow: column wrap;
     width: 0;
-  }
+  } */
 }
 
 
@@ -594,6 +585,7 @@ border-radius: 50px;
   /* header */
   .container .hero-section--header {
     padding-right: 1rem;
+    height: 87%;
   }
 }
 
@@ -613,6 +605,12 @@ border-radius: 50px;
   .hero-section--content__contact-dec {
     font-size: 16px;
     line-height: 1.2;
+  }
+  .card {
+    width: 80%;
+  }
+  .container-team-card {
+    align-items: center;
   }
 }
 
@@ -711,7 +709,7 @@ border-radius: 50px;
 
 @media (max-width: 800px) {
   .about-us-section {
-    height: 100vh;
+    height: 82vh;
   }
   .container {
     display: flex;
@@ -729,14 +727,39 @@ border-radius: 50px;
     height: auto;
   }
 
-  /* our service */
-  .service__shap2 {
-    font-size: 10px;
-  }
+}
 
-  .service__shap2 {
-    font-size: 10px;
-  }
-
+.contact{
+  width:1000px;
+  height: 900px;
+  margin: auto;
+  /* background-color: aquamarine; */
+  text-align: center;
+  position: relative;
 
 }
+.contact form { 
+position: absolute;
+top:70px;
+left:100px;
+
+  }
+  .contact input{
+      outline: 0;
+      padding: 8px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+  }
+  .contact input[name="subject"]{
+     width: 360px;
+  }
+ .contact button {
+     margin-top: 15px;
+     background-color:#0075EA;
+     width:300px;
+     padding: 10px;
+     outline: 0;
+ }
+ .contact textarea{
+     outline: 0;
+ }
