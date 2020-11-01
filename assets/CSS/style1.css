@@ -393,17 +393,17 @@ section{
 
 
 #member-one {
-  background-image: url("../images/ahmed.jpg");
+  background-image: url("../images/teams/ahmed.jpg");
 }
 #member-two{
-  background-image: url("../images/yasmeen.jpg");
+  background-image: url("../images/teams/yasmeen.jpg");
 }
 #member-three{
-  background-image: url("../images/osama.jpg");
+  background-image: url("../images/teams/osama.jpg");
  background-size: 100% 100%;
 }
 #member-four{
-  background-image: url("../images/mohumad.jpg");
+  background-image: url("../images/teams/mohumad.jpg");
 }
 
 
