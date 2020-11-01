@@ -8,7 +8,7 @@ Have a look at the official [MOYA(R) portfolio](https://gsg-g9.github.io/MOYA-R-
 
 <br/>
 <p align="center">
-    <img width="80%" src="https://gsg-g9.github.io/MOYA-R--portfolio/assets/images/template/home.png" alt="MOYA(R) Home">
+    <img width="80%" src="https://ibb.co/xmP3qXq" alt="MOYA(R) Home">
 </p>
 <br/>
 
